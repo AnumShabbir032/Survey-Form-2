@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+</head>
+
+<body> 
+
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .head {
+            text-align: center;
+            width: 730px;
+            margin: auto;
+            height: 80px;
+        }
+
+        ul li {
+            display: inline;
+            font-size: 24px;
+            float: left;
+            padding: 10px;
+        }
+
+        #step_1 {
+            background-color: rgb(146, 236, 143);
+            font-weight: bold;
+        }
+
+        #step_2 {
+            background-color: rgb(102, 151, 243);
+            font-weight: bold;
+        }
+
+        #step_3 {
+            background-color: rgb(202, 201, 201);
+        }
+
+
+        .form {
+            text-align: left;
+            width: 690px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            width: 550px;
+            border: 1px solid rgb(207, 206, 206);
+
+        }
+
+        button {
+            border: none;
+        }
+
+        .cnic {
+            width: 10px
+        }
+    </style>
+
+
+    <div class="head">
+        <ul>
+            <li id="step_1">Step 1: Account</li>
+            <li id="step_2">Step 2: Personal Details</li>
+            <li id="step_3">Step 3: Your Review</li>
+        </ul>
+    </div>
+
+    <div class="form">
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <form action="./step_3.html">
+
+                <label for="fname"> First Name: <br />
+                    <input type="text" id="fname" class="input_data" name="fname" placeholder="Enter First Name"
+                        maxlength="8" required>
+                </label>
+
+                <br />
+
+                <label for="lname"> Last Name: <br />
+                    <input type="text" id="lname" class="input_data" name="lname" placeholder="Enter Last Name"
+                        maxlength="8" required>
+                </label>
+
+                <br />
+
+                <label for="link"> CNIC: <br />
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    -
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    <input type="text" class="cnic">
+                    -
+                    <input type="text" class="cnic">
+                </label>
+
+                <br />
+
+                <label for="link"> Social Link: <br />
+                    <input type="text" id="link" class="input_data" name="link"
+                        placeholder="Enter Facebook/Linkedin profile linke" required>
+                </label>
+
+                <br />
+                
+                <a href="./index.html"> <img src="./Images/back.png" alt="" width="150px"> </a>
+
+                <button type="submit"> <img src="./Images/next.png" alt="" width="150px"> </button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
